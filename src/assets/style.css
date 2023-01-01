@@ -1,0 +1,23 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a.router-link-exact-active {
+    color: #41b883;
+}
+.spinner {
+    height: 30px;
+    width: 30px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: dotted 5px #999;
+    animation-name: loader-spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes loader-spin {
+    from   {  transform: rotate(0deg); }
+    to     {  transform: rotate(360deg); }
+}
